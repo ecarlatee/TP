@@ -110,7 +110,7 @@ t = time.time()
 for _ in range(3):
     bcrypt.hashpw(mdp, bcrypt.gensalt(rounds=12))
 print(f'bcrypt : 3 hash en {time.time()-t:.2f}s')
-```bash
+```
 Conclusion des mesures de robustesse :
  * MD5 / SHA-256 : Résistance très basse (plusieurs millions de hashs/s). Une attaque GPU pour un mot de passe de 8 caractères prendrait quelques heures.
  * Bcrypt (cost=12) : Très bonne résistance (~4 hashs/s). Une attaque pour un mot de passe de 8 caractères prendrait des milliers d'années.
