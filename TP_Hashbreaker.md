@@ -16,7 +16,7 @@ echo -n "bonjour" | sha256sum
 
 # Comparer avec 'Bonjour' (une seule majuscule)
 echo -n "Bonjour" | sha256sum
-```bash
+```
 Question 1 : Les hash de « bonjour » et « Bonjour » sont-ils proches ou totalement différents ? Expliquez.
 Les deux hashs sont totalement différents, il n’y a aucune correspondance distincte entre les deux chaînes de caractères. C'est l'effet d'avalanche.
 Question 2 : Si deux utilisateurs ont le même mot de passe, leurs hash sont-ils identiques ?
